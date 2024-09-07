@@ -10,7 +10,7 @@
                     <div class="intro-excerpt">
                         <h1 style="font-weight: 700; font-size: 40px;">Diseña tu mundo con <span clsas="d-block">innovación y estilo</span></h1>
                         <p class="mb-4">Descubre muebles únicos y personalizados con la última tecnología en impresión 3D. Explora nuestras colecciones y encuentra lo perfecto para tu hogar.</p>
-                        <p><a href="" class="btn btn-secondary me-2">Comprar ahora</a><a href="#" class="btn btn-white-outline">Conocenos</a></p>
+                        <p><a href="{% url 'Shop' %}" class="btn btn-secondary me-2">Comprar ahora</a><a href="{% url 'Documentacion' %}" class="btn btn-white-outline">Conocenos</a></p>
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -32,13 +32,13 @@
                 <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
                     <h2 class="mb-4 section-title">Elaborado con materiales de excelente calidad</h2>
                     <p class="mb-4">En Bioprint, cada producto es creado con los mejores materiales para garantizar durabilidad y belleza. Utilizamos tecnología de impresión 3D avanzada y materiales reciclados de alta calidad para ofrecerte muebles y decoración que no solo cumplen con tus expectativas estéticas, sino que también respetan el medio ambiente.</p>
-                    <p><a href="shop.html" class="btn">Explore</a></p>
+                    <p><a href="{% url 'Documentacion' %}" class="btn">Explore</a></p>
                 </div> 
                 <!-- End Column 1 -->
 
                 <!-- Start Column 2 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
+                    <a class="product-item" href="#">
                         <img src="{% static 'images/product-1.png'%}" class="img-fluid product-thumbnail">
                         <h3 class="product-title">Silla Victoriana</h3>
                         <strong class="product-price">Q5000.00</strong>
@@ -52,7 +52,7 @@
 
                 <!-- Start Column 3 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
+                    <a class="product-item" href="#">
                         <img src="{% static 'images/product-2.png'%}" class="img-fluid product-thumbnail">
                         <h3 class="product-title">Mesa Kruzo</h3>
                         <strong class="product-price">Q7800.00</strong>
@@ -66,7 +66,7 @@
 
                 <!-- Start Column 4 -->
                 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
+                    <a class="product-item" href="#">
                         <img src="{% static 'images/product-3.png'%}" class="img-fluid product-thumbnail">
                         <h3 class="product-title">Set Tai-Tai</h3>
                         <strong class="product-price">Q23000.00</strong>
@@ -167,7 +167,7 @@
                         <li>Aplicamos la última tecnología en impresión 3D para garantizar precisión y calidad.</li>
                         <li>Creamos muebles que no solo lucen bien, sino que también son prácticos y duraderos.</li>
                     </ul>
-                    <p><a herf="#" class="btn">Explore</a></p>
+                    <p><a href="{% url 'Documentacion' %}" class="btn">Conocenos</a></p>
                 </div>
             </div>
         </div>

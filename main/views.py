@@ -11,3 +11,7 @@ def Shop(request):
 def Equipo(request):
 
     return render(request, "about.html")
+
+def Documentacion(request):
+
+    return render(request, "documentacion.html")

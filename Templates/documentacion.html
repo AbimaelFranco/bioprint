@@ -1,0 +1,164 @@
+{% extends "template.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Start Hero Section -->
+<div class="hero">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5">
+                <div class="intro-excerpt">
+                    <h1>Sobre Nosotros</h1>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="hero-img-wrap" style="margin-left: 350px;">
+                    {% comment %} <img src="{% static 'images/couch.png'%}" class="img-fluid" style="max-width: 350px;"> {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Hero Section -->
+
+<!-- Misión y Visión Section -->
+<div class="mission-vision-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+                <h2 class="font-weight-bold">Nuestra Misión</h2>
+                <p>En Bioprint, nuestra misión es redefinir la industria de la decoración y el mobiliario personalizado 
+                    a través de la innovación y la sostenibilidad. Nos comprometemos a ofrecer productos únicos y de alta calidad, 
+                    diseñados a la medida de las necesidades y gustos de nuestros clientes, utilizando tecnología de impresión 3D y
+                    materiales reciclados. Nuestro objetivo es no solo embellecer espacios, sino también contribuir activamente a la
+                    reducción de residuos, promoviendo prácticas responsables y sostenibles en cada etapa de nuestro proceso productivo.
+                    Aspiramos a ser la primera opción para quienes buscan un equilibrio perfecto entre estilo, funcionalidad y 
+                    conciencia ambiental.</p>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <img src="{% static 'images/mision.jpg' %}" alt="Misión" class="img-fluid">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 order-lg-2">
+                <h2 class="font-weight-bold">Nuestra Visión</h2>
+                <p>Nuestra visión es liderar una transformación en la industria del mobiliario y la decoración, estableciendo
+                    un nuevo estándar de calidad, personalización y sostenibilidad. Imaginamos un futuro donde cada hogar
+                    y espacio de trabajo pueda reflejar la identidad única de sus habitantes, sin comprometer el medio 
+                    ambiente. En Bioprint, aspiramos a ser pioneros en la adopción de materiales reciclados en la impresión
+                    3D, promoviendo una economía circular y minimizando nuestra huella ecológica. Buscamos expandir nuestra 
+                    presencia a nivel global, siendo reconocidos por nuestra innovación, responsabilidad social y compromiso 
+                    con la excelencia, creando productos que no solo mejoren la calidad de vida de nuestros clientes, 
+                    sino también la del planeta.</p>
+            </div>
+            <div class="col-lg-6 mb-4 order-lg-1">
+                <img src="{% static 'images/why-choose-us-img.jpg' %}" alt="Visión" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Misión y Visión Section -->
+
+
+<!-- Valores Section -->
+<div class="values-section py-5">
+    <div class="container">
+        <h2 class="font-weight-bold text-center mb-4">Nuestros Valores</h2>
+        
+        <div class="row">
+            <!-- Primera fila con 3 elementos -->
+            <div class="col-12 col-md-4 mb-4 text-center">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="{% static 'images/innovacion.png' %}" alt="Image" class="imf-fluid" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Innovación</h3>
+                    <p>Fomentamos la creatividad y el desarrollo continuo de nuevas soluciones en diseño y fabricación.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4 text-center">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="{% static 'images/sostenibilidad.png' %}" alt="Image" class="imf-fluid" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Sostenibilidad</h3>
+                    <p>Comprometidos con el medio ambiente, utilizamos materiales reciclados y promovemos prácticas responsables.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4 text-center">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="{% static 'images/calidad.png' %}" alt="Image" class="imf-fluid" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Calidad</h3>
+                    <p>Nos esforzamos por ofrecer productos duraderos y de alto valor estético.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Segunda fila con 3 elementos -->
+            <div class="col-12 col-md-4 mb-4 text-center">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="{% static 'images/personalizacion.png' %}" alt="Image" class="imf-fluid" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Personalización</h3>
+                    <p>Cada producto es diseñado para reflejar las necesidades y gustos únicos de nuestros clientes.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4 text-center">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="{% static 'images/rsc.png' %}" alt="Image" class="imf-fluid" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Responsabilidad Social</h3>
+                    <p>Contribuimos activamente a la reducción de residuos y apoyamos la economía circular.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4 text-center">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="{% static 'images/servicio.png' %}" alt="Image" class="imf-fluid" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Excelencia en el Servicio</h3>
+                    <p>Priorizamos la satisfacción del cliente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Tercera fila con 1 elemento centrado -->
+            <div class="col-12 col-md-4 mb-4 text-center mx-auto">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="{% static 'images/compromiso.png' %}" alt="Image" class="imf-fluid" style="width: 50px; height: 50px;">
+                    </div>
+                    <h3>Compromiso con la comunidad</h3>
+                    <p>Trabajamos para generar un impacto positivo en las comunidades que servimos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Valores Section -->
+
+<!-- Mapa Estratégico Section -->
+<div class="strategic-map-section py-5">
+    <div class="container">
+        <h2 class="font-weight-bold text-center mb-4">Mapa Estratégico del Negocio</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 text-center">
+                <img src="{% static 'images/MapaEstrategico.png' %}" alt="Mapa Estratégico" class="img-fluid" >
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Mapa Estratégico Section -->
+
+{% endblock %}

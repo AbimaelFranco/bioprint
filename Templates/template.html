@@ -52,17 +52,19 @@
 						<li><a class="nav-link" href="{% url 'Equipo' %}">Equipo</a></li>
 						{% endif %}
 
-						{% comment %} {% if request.path == '/servicios'%}
+						{% comment %} 
+						{% if request.path == '/servicios'%}
 						<li class="nav-item active"><a class="nav-link" href="{% url 'Servicios' %}">Servicios</a></li>
 						{% else %}
 						<li><a class="nav-link" href="{% url 'Servicios' %}">Servicios</a></li>
 						{% endif %}
+						{% endcomment %}
 
 						{% if request.path == '/documentacion'%}
-						<li class="nav-item active"><a class="nav-link" href="{% url 'Documentacion' %}">Documentación</a></li>
+						<li class="nav-item active"><a class="nav-link" href="{% url 'Documentacion' %}">Sobre Nosotros</a></li>
 						{% else %}
-						<li><a class="nav-link" href="{% url 'Documentacion' %}">Documentación</a></li>
-						{% endif %} {% endcomment %}
+						<li><a class="nav-link" href="{% url 'Documentacion' %}">Sobre Nosotros</a></li>
+						{% endif %} 
 
 					</ul>
 
