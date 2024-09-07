@@ -7,3 +7,7 @@ def Home(request):
 def Shop(request):
 
     return render(request, "shop.html")
+
+def Equipo(request):
+
+    return render(request, "about.html")

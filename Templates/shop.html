@@ -2,22 +2,24 @@
 {% load static %}
 {% block content %}
 
-		<!-- Start Hero Section -->
+		    <!-- Start Hero Section -->
 			<div class="hero">
 				<div class="container">
 					<div class="row justify-content-between">
 						<div class="col-lg-5">
 							<div class="intro-excerpt">
-								<h1>Shop</h1>
+								<h1>Catálogo</h1>
 							</div>
 						</div>
 						<div class="col-lg-7">
-							
+							<div class="hero-img-wrap" style="margin-left: 350px;">
+								<img src="{% static 'images/couch.png'%}" class="img-fluid" style="max-width: 350px;">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		<!-- End Hero Section -->
+			<!-- End Hero Section -->
 
 		
 
@@ -28,12 +30,12 @@
 		      		<!-- Start Column 1 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5">
 						<a class="product-item" href="#">
-							<img src="images/product-3.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<strong class="product-price">$50.00</strong>
+							<img src="{% static 'images/product-1.png'%}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Silla Victoriana</h3>
+							<strong class="product-price">Q5000.00</strong>
 
 							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+								<img src="{% static 'images/cross.svg'%}" class="img-fluid">
 							</span>
 						</a>
 					</div> 
@@ -42,12 +44,12 @@
 					<!-- Start Column 2 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5">
 						<a class="product-item" href="#">
-							<img src="images/product-1.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<strong class="product-price">$50.00</strong>
+							<img src="{% static 'images/product-2.png'%}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Mesa Kruzo</h3>
+							<strong class="product-price">Q7800.00</strong>
 
 							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+								<img src="{% static 'images/cross.svg'%}" class="img-fluid">
 							</span>
 						</a>
 					</div> 
@@ -56,12 +58,12 @@
 					<!-- Start Column 3 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5">
 						<a class="product-item" href="#">
-							<img src="images/product-2.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Kruzo Aero Chair</h3>
-							<strong class="product-price">$78.00</strong>
+							<img src="{% static 'images/product-3.png'%}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Set Tai-Tai</h3>
+							<strong class="product-price">Q23000.00</strong>
 
 							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+								<img src="{% static 'images/cross.svg'%}" class="img-fluid">
 							</span>
 						</a>
 					</div>
@@ -70,27 +72,26 @@
 					<!-- Start Column 4 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5">
 						<a class="product-item" href="#">
-							<img src="images/product-3.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Ergonomic Chair</h3>
-							<strong class="product-price">$43.00</strong>
+							<img src="{% static 'images/product-4.png'%}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Little Bird</h3>
+							<strong class="product-price">Q150.00</strong>
 
 							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+								<img src="{% static 'images/cross.svg'%}" class="img-fluid">
 							</span>
 						</a>
 					</div>
 					<!-- End Column 4 -->
-
 
 					<!-- Start Column 1 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5">
 						<a class="product-item" href="#">
-							<img src="images/product-3.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<strong class="product-price">$50.00</strong>
+							<img src="{% static 'images/product-5.png'%}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Lamparas Vintage</h3>
+							<strong class="product-price">Q3500.00</strong>
 
 							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+								<img src="{% static 'images/cross.svg'%}" class="img-fluid">
 							</span>
 						</a>
 					</div> 
@@ -99,12 +100,12 @@
 					<!-- Start Column 2 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5">
 						<a class="product-item" href="#">
-							<img src="images/product-1.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<strong class="product-price">$50.00</strong>
+							<img src="{% static 'images/product-6.png'%}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Lamparas Twist</h3>
+							<strong class="product-price">Q3500.00</strong>
 
 							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+								<img src="{% static 'images/cross.svg'%}" class="img-fluid">
 							</span>
 						</a>
 					</div> 
@@ -113,12 +114,12 @@
 					<!-- Start Column 3 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5">
 						<a class="product-item" href="#">
-							<img src="images/product-2.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Kruzo Aero Chair</h3>
-							<strong class="product-price">$78.00</strong>
+							<img src="{% static 'images/product-7.png'%}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Silla Swift</h3>
+							<strong class="product-price">Q9200.00</strong>
 
 							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+								<img src="{% static 'images/cross.svg'%}" class="img-fluid">
 							</span>
 						</a>
 					</div>
@@ -127,16 +128,17 @@
 					<!-- Start Column 4 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5">
 						<a class="product-item" href="#">
-							<img src="images/product-3.png" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Ergonomic Chair</h3>
-							<strong class="product-price">$43.00</strong>
+							<img src="{% static 'images/product-8.png'%}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Combo Macetas</h3>
+							<strong class="product-price">Q350.00</strong>
 
 							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
+								<img src="{% static 'images/cross.svg'%}" class="img-fluid">
 							</span>
 						</a>
 					</div>
 					<!-- End Column 4 -->
+
 
 		      	</div>
 		    </div>

@@ -34,13 +34,36 @@
 
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item active">
-							<a class="nav-link" href="{% url 'Home' %}">Home</a>
-						</li>
+						{% if request.path == '/home'%}
+						<li class="nav-item active"><a class="nav-link" href="{% url 'Home' %}">Home</a></li>
+						{% else %}
+						<li><a class="nav-link" href="{% url 'Home' %}">Home</a></li>
+						{% endif %}
+
+						{% if request.path == '/shop'%}
+						<li class="nav-item active"><a class="nav-link" href="{% url 'Shop' %}">Shop</a></li>
+						{% else %}
 						<li><a class="nav-link" href="{% url 'Shop' %}">Shop</a></li>
-						<li><a class="nav-link" href="about.html">Equipo</a></li>
-						<li><a class="nav-link" href="services.html">Servicios</a></li>
-						<li><a class="nav-link" href="blog.html">Documentación</a></li>
+						{% endif %}
+
+						{% if request.path == '/Equipo'%}
+						<li class="nav-item active"><a class="nav-link" href="{% url 'Equipo' %}">Equipo</a></li>
+						{% else %}
+						<li><a class="nav-link" href="{% url 'Equipo' %}">Equipo</a></li>
+						{% endif %}
+
+						{% comment %} {% if request.path == '/Servicios'%}
+						<li class="nav-item active"><a class="nav-link" href="{% url 'Servicios' %}">Servicios</a></li>
+						{% else %}
+						<li><a class="nav-link" href="{% url 'Servicios' %}">Servicios</a></li>
+						{% endif %}
+
+						{% if request.path == '/Documentacion'%}
+						<li class="nav-item active"><a class="nav-link" href="{% url 'Documentacion' %}">Documentación</a></li>
+						{% else %}
+						<li><a class="nav-link" href="{% url 'Documentacion' %}">Documentación</a></li>
+						{% endif %} {% endcomment %}
+
 					</ul>
 
 					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
@@ -61,9 +84,9 @@
 		<footer class="footer-section">
 			<div class="container relative">
 
-				<div class="sofa-img" style="margin-top: -80px;">
+				{% comment %} <div class="sofa-img" style="margin-top: -80px;">
 					<img src="{% static 'images/sofa.png'%}" alt="Image" class="img-fluid">
-				</div>
+				</div> {% endcomment %}
 
 				<div class="row g-5 mb-5">
 					<div class="col-lg-12">
