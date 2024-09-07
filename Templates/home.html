@@ -1,0 +1,178 @@
+{% extends "template.html" %}
+{% load static %}
+{% block content %}
+
+    <!-- Start Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <div class="intro-excerpt">
+                        <h1 style="font-weight: 700; font-size: 40px;">Diseña tu mundo con <span clsas="d-block">innovación y estilo</span></h1>
+                        <p class="mb-4">Descubre muebles únicos y personalizados con la última tecnología en impresión 3D. Explora nuestras colecciones y encuentra lo perfecto para tu hogar.</p>
+                        <p><a href="" class="btn btn-secondary me-2">Comprar ahora</a><a href="#" class="btn btn-white-outline">Conocenos</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="hero-img-wrap" style="margin-left: 200px;">
+                        <img src="{% static 'images/couch.png'%}" class="img-fluid" style="max-width: 500px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Start Product Section -->
+    <div class="product-section">
+        <div class="container">
+            <div class="row">
+
+                <!-- Start Column 1 -->
+                <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+                    <h2 class="mb-4 section-title">Elaborado con materiales de excelente calidad</h2>
+                    <p class="mb-4">En Bioprint, cada producto es creado con los mejores materiales para garantizar durabilidad y belleza. Utilizamos tecnología de impresión 3D avanzada y materiales reciclados de alta calidad para ofrecerte muebles y decoración que no solo cumplen con tus expectativas estéticas, sino que también respetan el medio ambiente.</p>
+                    <p><a href="shop.html" class="btn">Explore</a></p>
+                </div> 
+                <!-- End Column 1 -->
+
+                <!-- Start Column 2 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                    <a class="product-item" href="cart.html">
+                        <img src="{% static 'images/product-1.png'%}" class="img-fluid product-thumbnail">
+                        <h3 class="product-title">Silla Victoriana</h3>
+                        <strong class="product-price">Q5000.00</strong>
+
+                        <span class="icon-cross">
+                            <img src="{% static 'images/cross.svg'%}" class="img-fluid">
+                        </span>
+                    </a>
+                </div> 
+                <!-- End Column 2 -->
+
+                <!-- Start Column 3 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                    <a class="product-item" href="cart.html">
+                        <img src="{% static 'images/product-2.png'%}" class="img-fluid product-thumbnail">
+                        <h3 class="product-title">Mesa Kruzo</h3>
+                        <strong class="product-price">Q7800.00</strong>
+
+                        <span class="icon-cross">
+                            <img src="{% static 'images/cross.svg'%}" class="img-fluid">
+                        </span>
+                    </a>
+                </div>
+                <!-- End Column 3 -->
+
+                <!-- Start Column 4 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                    <a class="product-item" href="cart.html">
+                        <img src="{% static 'images/product-3.png'%}" class="img-fluid product-thumbnail">
+                        <h3 class="product-title">Set Tai-Tai</h3>
+                        <strong class="product-price">Q23000.00</strong>
+
+                        <span class="icon-cross">
+                            <img src="{% static 'images/cross.svg'%}" class="img-fluid">
+                        </span>
+                    </a>
+                </div>
+                <!-- End Column 4 -->
+
+            </div>
+        </div>
+    </div>
+    <!-- End Product Section -->
+
+    <!-- Start Why Choose Us Section -->
+    <div class="why-choose-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <h2 class="section-title">¿Porqué BioPrint?</h2>
+                    <p>En Bioprint, nos esforzamos por ofrecerte una experiencia de compra excepcional. Desde la facilidad de elegir y personalizar tus productos hasta la tranquilidad de saber que contarás con envíos rápidos y soporte constante. Estamos comprometidos con tu satisfacción en cada paso del camino.</p>
+
+                    <div class="row my-5">
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon">
+                                    <img src="{% static 'images/truck.svg'%}" alt="Image" class="imf-fluid">
+                                </div>
+                                <h3>Envio rápido &amp; gratuito</h3>
+                                <p>Ofrecemos envíos rápidos y sin costo adicional para que puedas recibir tus muebles y decoración en el menor tiempo posible, sin complicaciones ni tarifas ocultas.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon">
+                                    <img src="{% static 'images/bag.svg'%}" alt="Image" class="imf-fluid">
+                                </div>
+                                <h3>Fácil de comprar</h3>
+                                <p>Nuestra plataforma está diseñada para ofrecerte una experiencia de compra sencilla e intuitiva, permitiéndote personalizar tus productos y realizar tu pedido en pocos pasos.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon">
+                                    <img src="{% static 'images/support.svg'%}" alt="Image" class="imf-fluid">
+                                </div>
+                                <h3>Soporte 24/7</h3>
+                                <p>Estamos aquí para ayudarte en cualquier momento. Nuestro equipo de atención al cliente está disponible las 24 horas del día, los 7 días de la semana, para responder a todas tus dudas y consultas.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6">
+                            <div class="feature">
+                                <div class="icon">
+                                    <img src="{% static 'images/return.svg'%}" alt="Image" class="imf-fluid">
+                                </div>
+                                <h3>Devoluciones sin complicaciones</h3>
+                                <p>Si por alguna razón no estás completamente satisfecho, ofrecemos un proceso de devoluciones fácil y sin estrés. Tu satisfacción es nuestra prioridad.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="img-wrap">
+                        <img src="{% static 'images/why-choose-us-img.jpg'%}" alt="Image" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Why Choose Us Section -->
+
+    <!-- Start We Help Section -->
+    <div class="we-help-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="imgs-grid">
+                        <div class="grid grid-1"><img src="{% static 'images/img-grid-1.jpg'%}" alt="Untree.co"></div>
+                        <div class="grid grid-2"><img src="{% static 'images/img-grid-2.jpg'%}" alt="Untree.co"></div>
+                        <div class="grid grid-3"><img src="{% static 'images/img-grid-3.jpg'%}" alt="Untree.co"></div>
+                    </div>
+                </div>
+                <div class="col-lg-5 ps-lg-5">
+                    <h2 class="section-title mb-4">Te Ayudamos a Crear un Diseño Interior Moderno</h2>
+                    <p>En Bioprint, nos especializamos en brindarte soluciones de diseño interior que combinan modernidad y funcionalidad. Con nuestra tecnología de impresión 3D, puedes personalizar cada detalle para que tu espacio sea único, reflejando tu estilo y necesidades.</p>
+
+                    <ul class="list-unstyled custom-list my-4">
+                        <li>Cada pieza se adapta a tu espacio y preferencias personales.</li>
+                        <li>Utilizamos materiales reciclados que respetan el medio ambiente</li>
+                        <li>Aplicamos la última tecnología en impresión 3D para garantizar precisión y calidad.</li>
+                        <li>Creamos muebles que no solo lucen bien, sino que también son prácticos y duraderos.</li>
+                    </ul>
+                    <p><a herf="#" class="btn">Explore</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End We Help Section -->
+
+
+{% endblock %}
