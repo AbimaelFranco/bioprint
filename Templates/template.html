@@ -46,19 +46,19 @@
 						<li><a class="nav-link" href="{% url 'Shop' %}">Shop</a></li>
 						{% endif %}
 
-						{% if request.path == '/Equipo'%}
+						{% if request.path == '/equipo'%}
 						<li class="nav-item active"><a class="nav-link" href="{% url 'Equipo' %}">Equipo</a></li>
 						{% else %}
 						<li><a class="nav-link" href="{% url 'Equipo' %}">Equipo</a></li>
 						{% endif %}
 
-						{% comment %} {% if request.path == '/Servicios'%}
+						{% comment %} {% if request.path == '/servicios'%}
 						<li class="nav-item active"><a class="nav-link" href="{% url 'Servicios' %}">Servicios</a></li>
 						{% else %}
 						<li><a class="nav-link" href="{% url 'Servicios' %}">Servicios</a></li>
 						{% endif %}
 
-						{% if request.path == '/Documentacion'%}
+						{% if request.path == '/documentacion'%}
 						<li class="nav-item active"><a class="nav-link" href="{% url 'Documentacion' %}">Documentación</a></li>
 						{% else %}
 						<li><a class="nav-link" href="{% url 'Documentacion' %}">Documentación</a></li>
