@@ -21,6 +21,23 @@
 </div>
 <!-- End Hero Section -->
 
+<!-- VIDEO Section -->
+<div class="strategic-map-section py-5">
+    <div class="container">
+        <h2 class="font-weight-bold text-center mb-4">Video</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 text-center">
+                {% comment %} <img src="{% static 'images/infografia.png' %}" alt="Mapa Estratégico" class="img-fluid" > {% endcomment %}
+                <video id="myVideo" style="width: 1920px; height: auto; max-width: 90%;">
+                    <source src="{% static 'images/video.mp4' %}" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- VIDEO Section -->
+
 <!-- Gamma Presentation Section -->
 <div class="gamma-presentation-section py-5">
     <div class="container">
@@ -62,6 +79,24 @@
 </div>
 <!-- End Mapa Estratégico Section -->
 
+
+<script>
+    window.onload = function() {
+        console.log("Script loaded");  // Verifica si el script se está cargando
+        var video = document.getElementById('myVideo');
+        if (video) {
+            console.log("Video element found");  // Verifica si el elemento de video se encuentra
+            video.controls = false;  // Oculta los controles del video
+            video.autoplay = true;   // Reproduce automáticamente al cargar
+            video.muted = true;      // Opcional: Mutea el video si no deseas sonido
+            video.loop = true;
+            video.play();           // Asegúrate de iniciar la reproducción
+
+        } else {
+            console.error("Video element not found");
+        }
+    }
+</script>
 
 
 {% endblock %}
