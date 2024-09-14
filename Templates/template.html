@@ -18,6 +18,31 @@
 		<link href="{% static 'css/tiny-slider.css'%}" rel="stylesheet">
 		<link href="{% static 'css/style.css'%}" rel="stylesheet">
 		<title>BioPrint</title>
+
+		    <!-- CSS personalizado en la misma página -->
+			<style>
+				/* Estilo para que el dropdown se despliegue al hacer hover */
+				.nav-item.dropdown:hover .dropdown-menu {
+					display: block;
+					margin-top: 0; /* Alinea el submenú correctamente */
+				}
+		
+				/* Cambiar el color de fondo del dropdown al verde */
+				.dropdown-menu {
+					background-color: #3b5d50; /* Verde personalizado */
+				}
+		
+				/* Cambiar el color del texto dentro del dropdown */
+				.dropdown-item {
+					color: white;
+				}
+		
+				/* Cambiar el color del fondo al pasar el mouse sobre los elementos del menú */
+				.dropdown-item:hover {
+					background-color: #3b5d50; /* Un verde más oscuro al hacer hover */
+					color: white;
+				}
+			</style>
 	</head>
 
 	<body>
@@ -34,37 +59,23 @@
 
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						{% if request.path == '/home'%}
-						<li class="nav-item active"><a class="nav-link" href="{% url 'Home' %}">Home</a></li>
-						{% else %}
-						<li><a class="nav-link" href="{% url 'Home' %}">Home</a></li>
-						{% endif %}
+						
+						<li {% if request.path == '/home'%} class="nav-item active" {% endif %}><a class="nav-link" href="{% url 'Home' %}">Home</a></li>			
+						
+						<li {% if request.path == '/shop'%} class="nav-item active" {% endif %}><a class="nav-link" href="{% url 'Shop' %}">Shop</a></li>
 
-						{% if request.path == '/shop'%}
-						<li class="nav-item active"><a class="nav-link" href="{% url 'Shop' %}">Shop</a></li>
-						{% else %}
-						<li><a class="nav-link" href="{% url 'Shop' %}">Shop</a></li>
-						{% endif %}
+						{% comment %} <li {% if request.path == '/equipo'%} class="nav-item active" {% endif %}><a class="nav-link" href="{% url 'Equipo' %}">Equipo</a></li> {% endcomment %}
 
-						{% if request.path == '/equipo'%}
-						<li class="nav-item active"><a class="nav-link" href="{% url 'Equipo' %}">Equipo</a></li>
-						{% else %}
-						<li><a class="nav-link" href="{% url 'Equipo' %}">Equipo</a></li>
-						{% endif %}
-
-						{% comment %} 
-						{% if request.path == '/servicios'%}
-						<li class="nav-item active"><a class="nav-link" href="{% url 'Servicios' %}">Servicios</a></li>
-						{% else %}
-						<li><a class="nav-link" href="{% url 'Servicios' %}">Servicios</a></li>
-						{% endif %}
-						{% endcomment %}
-
-						{% if request.path == '/documentacion'%}
-						<li class="nav-item active"><a class="nav-link" href="{% url 'Documentacion' %}">Sobre Nosotros</a></li>
-						{% else %}
-						<li><a class="nav-link" href="{% url 'Documentacion' %}">Sobre Nosotros</a></li>
-						{% endif %} 
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Conocenos </a>
+							<ul class="dropdown-menu" aria-labelledby="contactDropdown">
+								<li {% if request.path == '/documentacion'%} class="nav-item active" {% endif %}><a class="dropdown-item nav-link" href="{% url 'Documentacion' %}"> Sobre Nosotros </a></li>
+								<li {% if request.path == '/mapa'%} class="nav-item active" {% endif %}><a class="dropdown-item nav-link" href="{% url 'Mapa' %}"> Estrategia </a></li>
+								<li {% if request.path == '/indicadores'%} class="nav-item active" {% endif %}><a class="dropdown-item nav-link" href="{% url 'Indicadores' %}"> Indicadores y metas </a></li>
+								<li {% if request.path == '/cuatrops'%} class="nav-item active" {% endif %}><a class="dropdown-item nav-link" href="{% url 'CuatroPs' %}"> 4P's </a></li>
+								<li {% if request.path == '/equipo'%} class="nav-item active" {% endif %}><a class="dropdown-item nav-link" href="{% url 'Equipo' %}"> Nuestro Equipo </a></li>
+							</ul>
+						</li>
 
 					</ul>
 

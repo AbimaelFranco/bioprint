@@ -15,3 +15,15 @@ def Equipo(request):
 def Documentacion(request):
 
     return render(request, "documentacion.html")
+
+def MapaEstrategico(request):
+
+    return render(request, "mapa_estrategico.html")
+
+def Indicadores(request):
+
+    return render(request, "indicadores.html")
+
+def CuatroPs(request):
+
+    return render(request, "mapa_estrategico.html")

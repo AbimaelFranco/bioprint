@@ -1,0 +1,96 @@
+{% extends "template.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Start Hero Section -->
+<div class="hero">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5">
+                <div class="intro-excerpt">
+                    <h1>Estrategia</h1>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="hero-img-wrap" style="margin-left: 350px;">
+                    {% comment %} <img src="{% static 'images/couch.png'%}" class="img-fluid" style="max-width: 350px;"> {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Hero Section -->
+
+<!-- Estrategia Section -->
+<div class="strategy-section py-5">
+    <div class="container">
+        <h2 class="font-weight-bold text-center mb-5">Estrategia Empresarial</h2>
+        
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <h3 class="font-weight-bold">Innovación Tecnológica y Desarrollo de Producto</h3>
+                <p>Bioprint coloca la innovación tecnológica en el centro de su modelo de negocio. La mejora constante en técnicas de impresión 3D y la investigación en materiales reciclados son esenciales para garantizar productos de alta calidad que sean sostenibles y funcionales.</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="{% static 'images/estrategia/innovacion.png' %}" alt="Innovación" class="img-fluid" style="max-width: 150px;">
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-6 order-lg-2">
+                <h3 class="font-weight-bold">Personalización y Satisfacción del Cliente</h3>
+                <p>La estrategia de Bioprint se centra en ofrecer productos personalizados que se adapten a las necesidades estéticas y funcionales de los clientes, a través de una plataforma de diseño intuitiva y un servicio al cliente proactivo.</p>
+            </div>
+            <div class="col-lg-6 order-lg-1 text-center">
+                <img src="{% static 'images/estrategia/personalizacion.png' %}" alt="Personalización" class="img-fluid" style="max-width: 150px;">
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <h3 class="font-weight-bold">Compromiso con la Sostenibilidad y Responsabilidad Social</h3>
+                <p>Bioprint promueve prácticas de fabricación sostenibles, priorizando el uso de materiales reciclados y fomentando la economía circular. Esta estrategia refuerza el compromiso de la empresa con la responsabilidad social y el medio ambiente.</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="{% static 'images/estrategia/sostenibilidad.png' %}" alt="Sostenibilidad" class="img-fluid" style="max-width: 150px;">
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-6 order-lg-2">
+                <h3 class="font-weight-bold">Expansión y Presencia Global</h3>
+                <p>Con un enfoque en alianzas estratégicas y un modelo de negocio escalable, Bioprint busca expandirse a nivel global, llevando su propuesta de valor basada en la sostenibilidad y personalización a mercados internacionales.</p>
+            </div>
+            <div class="col-lg-6 order-lg-1 text-center">
+                <img src="{% static 'images/estrategia/expansion.png' %}" alt="Expansión" class="img-fluid" style="max-width: 150px;">
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <h3 class="font-weight-bold">Excelencia Operacional y Mejora Continua</h3>
+                <p>Bioprint implementa prácticas de mejora continua como Lean Manufacturing y Six Sigma para optimizar sus procesos productivos, asegurando calidad, eficiencia y costos operativos bajos.</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="{% static 'images/estrategia/excelencia.png' %}" alt="Operacional" class="img-fluid" style="max-width: 150px;">
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- End Estrategia Section -->
+
+<!-- Mapa Estratégico Section -->
+<div class="strategic-map-section py-5">
+    <div class="container">
+        <h2 class="font-weight-bold text-center mb-4">Mapa Estratégico del Negocio</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 text-center">
+                <img src="{% static 'images/MapaEstrategico.png' %}" alt="Mapa Estratégico" class="img-fluid" >
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Mapa Estratégico Section -->
+
+{% endblock %}
