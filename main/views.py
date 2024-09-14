@@ -26,4 +26,4 @@ def Indicadores(request):
 
 def CuatroPs(request):
 
-    return render(request, "mapa_estrategico.html")
+    return render(request, "cuatrops.html")

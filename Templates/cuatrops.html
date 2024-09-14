@@ -1,0 +1,67 @@
+{% extends "template.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Start Hero Section -->
+<div class="hero">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5">
+                <div class="intro-excerpt">
+                    <h1>4Ps</h1>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="hero-img-wrap" style="margin-left: 350px;">
+                    {% comment %} <img src="{% static 'images/couch.png'%}" class="img-fluid" style="max-width: 350px;"> {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Hero Section -->
+
+<!-- Gamma Presentation Section -->
+<div class="gamma-presentation-section py-5">
+    <div class="container">
+        <h2 class="font-weight-bold text-center mb-4">4Ps en BioPrint</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 text-center">
+                <!-- Replace with the actual embed code from Gamma -->
+                {% comment %} <iframe src="https://gamma.app/embed/y8egvuvgwwezp2d" width="800" height="600" frameborder="0" allowfullscreen></iframe> {% endcomment %}
+                <iframe src="https://gamma.app/embed/y8egvuvgwwezp2d" style="width: 1750px; max-width: 100%; height: 6250px" allow="fullscreen" title="Presentación de las 4P de Bioprint"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Gamma Presentation Section -->
+
+<!-- Mapa Estratégico Section -->
+<div class="strategic-map-section py-5">
+    <div class="container">
+        <h2 class="font-weight-bold text-center mb-4">Redes Sociales</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 text-center">
+                <img src="{% static 'images/Instagram.jpeg' %}" alt="Mapa Estratégico" class="img-fluid" >
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Mapa Estratégico Section -->
+
+<!-- Mapa Estratégico Section -->
+<div class="strategic-map-section py-5">
+    <div class="container">
+        <h2 class="font-weight-bold text-center mb-4">Infografia</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 text-center">
+                <img src="{% static 'images/infografia.png' %}" alt="Mapa Estratégico" class="img-fluid" >
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Mapa Estratégico Section -->
+
+
+
+{% endblock %}
