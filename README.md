@@ -22,6 +22,7 @@ BioPrint is not just another furniture and decoration company; it is a business 
 ### Built With
 
 * [![Python][Python.js]][Python-url]
+* [![Django][Django.js]][Django-url]
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -76,4 +77,6 @@ Distributed under the GPL-3.0 license. See `LICENSE.txt` for more information.
 
 
 [Python.js]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+[Django.js]: https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green
+[Django-url]: https://www.djangoproject.com/
 [Python-url]: https://www.python.org/
