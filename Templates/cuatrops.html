@@ -67,7 +67,7 @@
 <!-- End Mapa Estratégico Section -->
 
 <!-- Mapa Estratégico Section -->
-<div class="strategic-map-section py-5">
+{% comment %} <div class="strategic-map-section py-5">
     <div class="container">
         <h2 class="font-weight-bold text-center mb-4">Mercaderia</h2>
         <div class="row justify-content-center">
@@ -76,8 +76,37 @@
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- End Mapa Estratégico Section -->
+
+<!-- Start We Help Section -->
+<div class="we-help-section">
+    <div class="container">
+        <h2 class="font-weight-bold text-center mb-4">Merch</h2>
+        <div class="row justify-content-between">
+            <div class="col-lg-10 mb-5 mb-lg-0">
+                <div class="imgs-grid">
+                    <div class="grid grid-1"><img src="{% static 'images/merch.jpeg'%}" alt="Untree.co"></div>
+                    <div class="grid grid-2"><img src="{% static 'images/merch/1.jpeg'%}" alt="Untree.co"></div>
+                    <div class="grid grid-3"><img src="{% static 'images/merch/2.jpeg'%}" alt="Untree.co"></div>
+                </div>
+            </div>
+            {% comment %} <div class="col-lg-5 ps-lg-5">
+                <h2 class="section-title mb-4">Te Ayudamos a Crear un Diseño Interior Moderno</h2>
+                <p>En Bioprint, nos especializamos en brindarte soluciones de diseño interior que combinan modernidad y funcionalidad. Con nuestra tecnología de impresión 3D, puedes personalizar cada detalle para que tu espacio sea único, reflejando tu estilo y necesidades.</p>
+
+                <ul class="list-unstyled custom-list my-4">
+                    <li>Cada pieza se adapta a tu espacio y preferencias personales.</li>
+                    <li>Utilizamos materiales reciclados que respetan el medio ambiente</li>
+                    <li>Aplicamos la última tecnología en impresión 3D para garantizar precisión y calidad.</li>
+                    <li>Creamos muebles que no solo lucen bien, sino que también son prácticos y duraderos.</li>
+                </ul>
+                <p><a href="{% url 'Documentacion' %}" class="btn">Conocenos</a></p>
+            </div> {% endcomment %}
+        </div>
+    </div>
+</div>
+<!-- End We Help Section -->
 
 <!-- Mapa Estratégico Section -->
 <div class="strategic-map-section py-5">
