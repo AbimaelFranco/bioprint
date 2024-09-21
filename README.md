@@ -1,5 +1,22 @@
-# bioprint
-Bioprint is a business that uses 3D printing technology and recycled materials to create custom furniture and decoration. This repository contains the code for the website, built with Django, showcasing our products and commitment to sustainability.
+<a name="readme-top"></a>
+
+<br />
+<div align="center">
+  <a href="https://github.com/AbimaelFranco/bioprint">
+    <img src="static/images/why-choose-us-img.jpg" alt="Logo" width="450" height="500">
+  </a>
+
+  <h3 align="center">BioPrint</h3>
+
+  <p align="center">
+    BioPrint is a business that uses 3D printing technology and recycled materials to create custom furniture and decoration.
+    
+  </p>
+</div>
+
+## About The Project
+
+BioPrint is not just another furniture and decoration company; it is a business founded on the principles of innovation and sustainability. By harnessing cutting-edge 3D printing technology and using recycled materials, we create custom-designed furniture that reflects both the personal style of our clients and our commitment to environmental responsibility.
 
 
 ### Built With
@@ -33,6 +50,30 @@ This is an list things you need to use BioPrint.
    ```sh
    pip install -r requirements.txt
    ```
+
+### Usage
+
+After successfully setting up the project, you can run the development server using the following command:
+
+```sh
+python manage.py runserver
+```
+
+Then, open your browser and navigate to http://127.0.0.1:8000/home to view the website. You will see the homepage where you can browse through the products, view the shop, and read about our sustainability efforts.
+
+
+## PROJECT SCREENSHOTS
+
+![Image text](https://github.com/AbimaelFranco/bioprint/blob/main/static/images/Captures/Home.png)
+![Image text](https://github.com/AbimaelFranco/bioprint/blob/main/static/images/Captures/Shop.png)
+![Image text](https://github.com/AbimaelFranco/bioprint/blob/main/static/images/Captures/About.png)
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the GPL-3.0 license. See `LICENSE.txt` for more information.
+
 
 [Python.js]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [Python-url]: https://www.python.org/
